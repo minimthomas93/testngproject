@@ -1,127 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+<testng-results ignored="4" total="5" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-03T20:49:14 IST" name="mysuite" finished-at="2023-05-03T20:49:52 IST" duration-ms="38672">
+  <suite started-at="2023-05-05T21:46:18 IST" name="Default suite" finished-at="2023-05-05T21:46:51 IST" duration-ms="33101">
     <groups>
     </groups>
-    <test started-at="2023-05-03T20:49:14 IST" name="chrometests" finished-at="2023-05-03T20:49:52 IST" duration-ms="38672">
-      <class name="testngproject.ParameterizationProgram">
-        <test-method is-config="true" signature="loadPage(java.lang.String,java.lang.String)[pri:0, instance:testngproject.ParameterizationProgram@a530d0a]" started-at="2023-05-03T20:49:14 IST" name="loadPage" finished-at="2023-05-03T20:49:27 IST" duration-ms="13262" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://qalegend.com/billing/public/login]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loadPage -->
-        <test-method signature="login()[pri:2, instance:testngproject.ParameterizationProgram@a530d0a]" started-at="2023-05-03T20:49:27 IST" name="login" finished-at="2023-05-03T20:49:31 IST" duration-ms="3814" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testngproject.ParameterizationProgram@a530d0a]" started-at="2023-05-03T20:49:31 IST" name="closeBrowser" finished-at="2023-05-03T20:49:31 IST" duration-ms="402" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="loadPage(java.lang.String,java.lang.String)[pri:0, instance:testngproject.ParameterizationProgram@a530d0a]" started-at="2023-05-03T20:49:31 IST" name="loadPage" finished-at="2023-05-03T20:49:41 IST" duration-ms="9762" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://qalegend.com/billing/public/login]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loadPage -->
-        <test-method signature="endPopup()[pri:3, instance:testngproject.ParameterizationProgram@a530d0a]" started-at="2023-05-03T20:49:41 IST" name="endPopup" finished-at="2023-05-03T20:49:41 IST" duration-ms="32" status="FAIL">
-          <exception class="java.lang.IndexOutOfBoundsException">
-            <message>
-              <![CDATA[Index 11 out of bounds for length 1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IndexOutOfBoundsException: Index 11 out of bounds for length 1
-at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
-at java.base/java.util.Objects.checkIndex(Objects.java:359)
-at java.base/java.util.ArrayList.get(ArrayList.java:427)
-at testngproject.ParameterizationProgram.endPopup(ParameterizationProgram.java:56)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IndexOutOfBoundsException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endPopup -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testngproject.ParameterizationProgram@a530d0a]" started-at="2023-05-03T20:49:41 IST" name="closeBrowser" finished-at="2023-05-03T20:49:41 IST" duration-ms="361" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="loadPage(java.lang.String,java.lang.String)[pri:0, instance:testngproject.ParameterizationProgram@a530d0a]" started-at="2023-05-03T20:49:41 IST" name="loadPage" finished-at="2023-05-03T20:49:52 IST" duration-ms="10527" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://qalegend.com/billing/public/login]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loadPage -->
-        <test-method signature="HomePageTitle()[pri:4, instance:testngproject.ParameterizationProgram@a530d0a]" started-at="2023-05-03T20:49:52 IST" name="HomePageTitle" finished-at="2023-05-03T20:49:52 IST" duration-ms="18" status="FAIL">
+    <test started-at="2023-05-05T21:46:18 IST" name="Default test" finished-at="2023-05-05T21:46:51 IST" duration-ms="33101">
+      <class name="testngproject.TestngAssignment1">
+        <test-method signature="login()[pri:2, instance:testngproject.TestngAssignment1@3b6ddd1d]" started-at="2023-05-05T21:46:18 IST" name="login" finished-at="2023-05-05T21:46:51 IST" duration-ms="33009" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Failed expected [Home - QAlegend] but found [Login - Demo POS]]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Failed expected [Home - QAlegend] but found [Login - Demo POS]
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at testngproject.ParameterizationProgram.HomePageTitle(ParameterizationProgram.java:63)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at testngproject.TestngAssignment1.login(TestngAssignment1.java:87)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -138,24 +35,25 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- HomePageTitle -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testngproject.ParameterizationProgram@a530d0a]" started-at="2023-05-03T20:49:52 IST" name="closeBrowser" finished-at="2023-05-03T20:49:52 IST" duration-ms="411" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testngproject.ParameterizationProgram -->
-    </test> <!-- chrometests -->
-  </suite> <!-- mysuite -->
+        </test-method> <!-- login -->
+      </class> <!-- testngproject.TestngAssignment1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

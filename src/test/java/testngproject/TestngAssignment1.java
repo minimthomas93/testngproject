@@ -1,5 +1,6 @@
 package testngproject;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,6 +14,8 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.beust.jcommander.Parameter;
+
+import utilityPrograms.GenericUtility;
 
 //Testcase execution Flow1
 //Load page
@@ -37,6 +40,7 @@ import com.beust.jcommander.Parameter;
 public class TestngAssignment1 {
 	
 	WebDriver driver;
+	GenericUtility gutil;
 	
 	@Test(priority=1)
 	@Parameters({"browser","url"})
@@ -64,10 +68,21 @@ public class TestngAssignment1 {
 		
 	}
 	
+	//for generate random user name values
+//	public String randomeString()
+//	{
+//		String generatedString=RandomStringUtils.randomAlphabetic(5);
+//		return generatedString;
+//	}
+	
 	@Test(priority=2)
 	public void login()
 	{
+		GenericUtility gutil;
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://qalegend.com/billing/public/login");
 		driver.findElement(By.id("username")).sendKeys("admin");
+		//driver.findElement(By.id("username")).sendKeys(randomeString()); -->for generate random username values
 		driver.findElement(By.id("password")).sendKeys("123456");
 		driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
 		Assert.assertTrue(false);

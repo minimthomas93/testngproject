@@ -72,7 +72,7 @@ package utilityPrograms;
 	}
 	
 
-	public static Object[][] tdata() throws IOException{
+	public static String[][] tdata() throws IOException{
 		String path=System.getProperty("user.dir")+"\\src\\test\\resources\\EXCELDATA.xlsx";
 
 		XLUtility xlutil=new XLUtility(path);

@@ -17,7 +17,7 @@ import org.testng.annotations.Parameters;
 
 
 	public class ParameterizationProgram {
-	
+		//logger=LogManager.getLogger(this.getClass());
 		
 		WebDriver driver;
 		
